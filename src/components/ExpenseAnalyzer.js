@@ -39,8 +39,8 @@ const ExpenseAnalyzer = () => {
           if (typeof t.date === 'string') {
             if (t.date.match(/^\d{4}-\d{1,2}-\d{1,2}$/)) {
               parsedDate = new Date(t.date);
-            } else if (t.date.match(/^\d{1,2}[/\-]\d{1,2}[/\-]\d{4}$/)) {
-              const parts = t.date.split(/[/\-]/);
+            } else if (t.date.match(/^\d{1,2}[/-]\d{1,2}[/-]\d{4}$/)) {
+              const parts = t.date.split(/[/-]/);
               const month = parseInt(parts[0], 10);
               const day = parseInt(parts[1], 10);
               const year = parseInt(parts[2], 10);
@@ -85,8 +85,8 @@ const ExpenseAnalyzer = () => {
           if (typeof t.date === 'string') {
             if (t.date.match(/^\d{4}-\d{1,2}-\d{1,2}$/)) {
               parsedDate = new Date(t.date);
-            } else if (t.date.match(/^\d{1,2}[/\-]\d{1,2}[/\-]\d{4}$/)) {
-              const parts = t.date.split(/[/\-]/);
+            } else if (t.date.match(/^\d{1,2}[/-]\d{1,2}[/-]\d{4}$/)) {
+              const parts = t.date.split(/[/-]/);
               const month = parseInt(parts[0], 10);
               const day = parseInt(parts[1], 10);
               const year = parseInt(parts[2], 10);
@@ -144,8 +144,8 @@ const ExpenseAnalyzer = () => {
               parsedDate = new Date(t.date);
             }
             // Handle MM/DD/YYYY or M/D/YYYY formats
-            else if (t.date.match(/^\d{1,2}[/\-]\d{1,2}[/\-]\d{4}$/)) {
-              const parts = t.date.split(/[/\-]/);
+            else if (t.date.match(/^\d{1,2}[/-]\d{1,2}[/-]\d{4}$/)) {
+              const parts = t.date.split(/[/-]/);
               const month = parseInt(parts[0], 10);
               const day = parseInt(parts[1], 10);
               const year = parseInt(parts[2], 10);
@@ -335,8 +335,8 @@ const ExpenseAnalyzer = () => {
             let parsedDate = null;
             
             // Handle MM/DD/YYYY, MM-DD-YYYY, M/D/YYYY formats
-            if (dateValue.match(/^\d{1,2}[/\-]\d{1,2}[/\-]\d{4}$/)) {
-              const parts = dateValue.split(/[/\-]/);
+            if (dateValue.match(/^\d{1,2}[/-]\d{1,2}[/-]\d{4}$/)) {
+              const parts = dateValue.split(/[/-]/);
               const month = parseInt(parts[0], 10);
               const day = parseInt(parts[1], 10);
               const year = parseInt(parts[2], 10);
@@ -410,8 +410,8 @@ const ExpenseAnalyzer = () => {
         if (typeof t.date === 'string') {
           if (t.date.match(/^\d{4}-\d{1,2}-\d{1,2}$/)) {
             parsedDate = new Date(t.date);
-          } else if (t.date.match(/^\d{1,2}[/\-]\d{1,2}[/\-]\d{4}$/)) {
-            const parts = t.date.split(/[/\-]/);
+          } else if (t.date.match(/^\d{1,2}[/-]\d{1,2}[/-]\d{4}$/)) {
+            const parts = t.date.split(/[/-]/);
             const month = parseInt(parts[0], 10);
             const day = parseInt(parts[1], 10);
             const year = parseInt(parts[2], 10);
